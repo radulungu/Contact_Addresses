@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>OnCo (Online Contacts)</title>
+</head>
+<body>
+
+    <header>
+        
+        <div class="navbar">
+            
+            <button onclick="functionContacts()">All Contacts</button>
+            <button onclick="functionFilterContacts()">Filter Contacts</button>
+            <button onclick="functionAdd()">Add Contact</button>
+            <button class="push_item" onclick="functionLogout()">LogOut</button>
+        
+        </div>
+
+    </header>
+
+    <section>
+        
+        <div id="home">
+            
+            <form action="" method="">
+                <label for="create_group">Create new group</label>
+                <input type="text" id="create_group" name="create_group">
+
+                <input type="submit" name="create_group_button" value="Create">
+            </form>
+
+            <h2>Work:</h2>
+
+            <img src="1.jpg" onclick="show_1()">
+            <ul id="p_1">
+                <li>First name: Razvan</li>
+                <li>Last name: Marin</li>
+                <li>Phone number: 0745094878</li>
+                <li>Email: razvanmarin98@yahoo.com</li>
+                <li>City: Cluj</li>
+                <li>Age: 21</li>
+                <li>Faculty: Computer Science</li>
+                <li>Web address: www.rmarin.com</li>
+                <li>Interests: tehnologii web, climbing</li>
+            </ul>
+            <button type="button">Edit contact</button>
+            <button type="button">Delete contact</button>
+
+            <h2>School:</h2>
+            <ul></ul>
+
+            <h2>Going out:</h2>
+            <ul></ul>
+
+            <h2>Sport club:</h2>
+            <p onclick="show_2()">Ilinca Pascu</p>
+            <ul id="p_2">
+                <li>First name: Ilinca</li>
+                <li>Last name: Pascu</li>
+                <li>Phone number: 0723094324</li>
+                <li>Email: ilinca_pascu@yahoo.com</li>
+                <li>City: Iasi</li>
+                <li>Age: 20</li>
+                <li>Faculty: Geography</li>
+                <li>Web address: -</li>
+                <li>Interests: sports, movies, going out</li>
+                <li>Profile picture:<img src="1.jpg"></li>
+            </ul>
+            <button type="button">Edit contact</button>
+            <button type="button">Delete contact</button>
+
+
+            <h2>Close friends:</h2>
+            <p onclick="show_3()">Rares Arvinte</p>
+            <ul id="p_3">
+                <li>First name: Rares</li>
+                <li>Last name: Arvinte</li>
+                <li>Phone number: 0744999654</li>
+                <li>Email: raresa@gmail.com</li>
+                <li>City: Iasi</li>
+                <li>Age: 20</li>
+                <li>Faculty: Chemistry</li>
+                <li>Web address: -</li>
+                <li>Interests: reading, runnning</li>
+                <li>Profile picture:<img src="1.jpg"></li>
+            </ul>
+            <button type="button">Edit contact</button>
+            <button type="button">Delete contact</button>
+
+        </div>
+
+    </section>
+
+    <section>
+    
+        <div id="sidebar">
+            
+            <h3>Filters</h3>
+
+            <form action="" method="">
+
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="user_fname">
+
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="user_lname">
+
+                <label for="phone_nr">Phone number:</label>
+                <input type="tel" id="phone_nr" name="phone_nr">
+
+                <label for="mail">Email:</label>
+                <input type="email" id="mail" name="mail">
+
+                <label for="min_age">Minimum age:</label>
+                <input type="number" id="min_age" name="user_min_age" min="1" max="120">
+
+                <label for="max_age">Maximum age:</label>
+                <input type="number" id="max_age" name="user_max_age" min="1" max="120">
+
+                <label for="city_address">City:</label>
+                <input type="text" id="city_address" name="user_cityaddress">
+
+                <label for="what_faculty">Faculty:</label>
+                <input type="text" id="what_faculty" name="what_faculty">
+
+                <label for="user_interests">Interests:</label>
+                <input type="text" id="user_interests" name="interests">
+
+                <input type="submit" name="submit_filter" value="Filter">
+
+            </form>
+
+            <input type="submit" name="submit_vCard" value="Export vCard">
+            
+            <input type="submit" name="submit_CSV" value="Export CSV">
+        
+            <input type="submit" name="submit_Atom" value="Export Atom">
+
+        </div>
+
+    </section>
+
+    <section>
+        
+        <div id="filteredContacts">
+
+            <ul>
+                
+                <li>        
+                    <pre>
+                        First name: Ilinca
+                        Last name: Pascu
+                        Phone number: 0723094324
+                        Email: ilinca_pascu@yahoo.com
+                        City: Iasi
+                        Age: 20
+                        Faculty: Geography
+                        Web address: -
+                        Interests: sports, movies, going out
+                        Profile picture:
+                        <img src="1.jpg">
+                    </pre>
+                </li>
+
+                <li>        
+                    <pre>
+                        First name: Razvan
+                        Last name: Marin
+                        Phone number: 0745094878
+                        Email: razvanmarin98@yahoo.com
+                        City: Cluj
+                        Age: 21
+                        Faculty: Computer Science
+                        Web address: www.rmarin.com
+                        Interests: tehnologii web, climbing
+                        Profile picture:
+                        <img src="1.jpg">
+                    </pre>
+                </li>
+
+                <li>        
+                    <pre>
+                        First name: Rares
+                        Last name: Arvinte
+                        Phone number: 0744999654
+                        Email: raresa@gmail.com
+                        City: Iasi
+                        Faculty: Chemistry
+                        Web address: -
+                        Interests: reading, runnning
+                        Profile picture:
+                        <img src="3.jpg">
+                    </pre>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+
+    <script src="js.js"></script>
+
+</body>
+</html>
