@@ -1,0 +1,150 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700');
+
+html {
+	background-color: #e0c5bd;
+	font-family: 'Quicksand Medium', sans-serif;
+}
+
+body {
+	margin: 0;
+}
+
+.navbar {
+	display: flex;
+	margin: 0;
+	text-align: center;
+	background-color: #e0c5bd;
+}
+
+.push_item {
+	margin-left: auto;
+}
+
+.navbar button {
+	background-color: #e0c5bd;
+	color: #fdf9f3;
+	border: none;
+	padding: 20px 30px;
+	font-size: 130%;
+}
+
+.navbar button:hover {
+	text-decoration: underline;
+}
+
+button:focus {
+	outline: 0;
+}
+
+#home {
+	color: #fdf9f3;
+	text-align: center;
+}
+
+#home form {
+	width: 100px;
+	display: inline-block;
+	color: #fdf9f3;
+	margin: 0 auto;
+}
+
+#home h2 {
+	font-size: 40px;
+	padding-top: 30px;
+}
+
+#home h3 {
+	font-size: 30px;
+	padding: 30px 0px;
+}
+
+.contact_create {
+	border: none;
+	border-radius: 10px 0px 10px 0px;
+	width: 80px;
+	height: 30px;
+	margin: 20px 20px;
+	background-color: #af958f;
+	color: #fdf9f3;
+}
+
+.align_items {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+
+#home img, #filteredContacts img {
+	width: 300px;
+	height: 200px;
+	margin-right: 0;
+}
+
+#home ul, #filteredContacts ul {
+	list-style-type: none;
+	background-color: #af958f;
+	color: #fdf9f3;
+	width: 300px;
+	height: 250px;
+	margin-left: 0;
+	padding: 30px 30px 30px 30px;
+	text-align: justify;
+	justify-content: center;
+	overflow: auto;
+	box-shadow: 0px 0px 25px 0px #888888;;
+	border-radius: 40px 0px 0px 0px;
+}
+
+#home li, #filteredContacts li {
+	color: #fdf9f3;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+span:focus {
+	border-bottom: 1px solid #c2c2c5;
+	outline: 0;
+}
+
+.contact_button {
+	border: none;
+	border-radius: 10px 0px 10px 0px;
+	width: 80px;
+	height: 30px;
+	margin: 20px 20px;
+	background-color: #fdf9f3;
+}
+
+
+#addContact, #login, #register {
+	display: none;
+	color: #000000;
+	width: 400px;
+	margin: 5% auto;
+}
+
+#filteredContacts {
+	display: none;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#addContact form, #register form, #login form {
+	padding: 20px;
+}
+
+input:not([type=submit]) {
+	border: none;
+	border-bottom: 1px solid #fdf9f3;
+	background: transparent;
+}
