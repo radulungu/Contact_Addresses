@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Annie Use Your Telescope' rel='stylesheet'>
     <title>OnCo (Online Contacts)</title>
 </head>
 <body>
@@ -25,71 +26,187 @@
     <section>
         
         <div id="home">
-            
-            <form action="" method="">
-                <label for="create_group">Create new group</label>
-                <input type="text" id="create_group" name="create_group">
 
-                <input type="submit" name="create_group_button" value="Create">
+            <h2>Want to create a new group?</h2>
+
+            <form action="" method="">
+                
+                <div>
+
+                    <label for="create_group">Create new group</label>
+                    <input type="text" id="create_group" name="create_group">
+
+                </div>
+
+                <div>
+
+                    <input class="contact_create" type="submit" name="create_group_button" value="Create">
+                
+                </div>
+
             </form>
 
-            <h2>Work:</h2>
+            <h3>Work:</h3>
 
-            <img src="1.jpg" onclick="show_1()">
-            <ul id="p_1">
-                <li>First name: Razvan</li>
-                <li>Last name: Marin</li>
-                <li>Phone number: 0745094878</li>
-                <li>Email: razvanmarin98@yahoo.com</li>
-                <li>City: Cluj</li>
-                <li>Age: 21</li>
-                <li>Faculty: Computer Science</li>
-                <li>Web address: www.rmarin.com</li>
-                <li>Interests: tehnologii web, climbing</li>
-            </ul>
-            <button type="button">Edit contact</button>
-            <button type="button">Delete contact</button>
+            <div class="align_items">
 
-            <h2>School:</h2>
-            <ul></ul>
+                <div class="container">
 
-            <h2>Going out:</h2>
-            <ul></ul>
+                    <img src="1.jpg">
+                    <ul>
+                        <li>First name:<span contenteditable="true" spellcheck="false">Razvan</span></li>
+                        <li>Last name: <span contenteditable="true" spellcheck="false">Marin</span></li>
+                        <li>Phone number: <span contenteditable="true" spellcheck="false">0745094878</span></li>
+                        <li>Email: <span contenteditable="true" spellcheck="false">razvanmarin98@yahoo.com</span></li>
+                        <li>City: <span contenteditable="true" spellcheck="false">Cluj</span></li>
+                        <li>Age: <span contenteditable="true" spellcheck="false">21</span></li>
+                        <li>Faculty: <span contenteditable="true" spellcheck="false">Computer Science</span></li>
+                        <li>Web address: <span contenteditable="true" spellcheck="false">www.rmarin.com</span></li>
+                        <li>Interests: <span contenteditable="true" spellcheck="false">tehnologii web, climbing</span></li>
+                        <li><button class="contact_button">Save</button><button class="contact_button">Delete</button></li>
+                    </ul>
 
-            <h2>Sport club:</h2>
-            <p onclick="show_2()">Ilinca Pascu</p>
-            <ul id="p_2">
-                <li>First name: Ilinca</li>
-                <li>Last name: Pascu</li>
-                <li>Phone number: 0723094324</li>
-                <li>Email: ilinca_pascu@yahoo.com</li>
-                <li>City: Iasi</li>
-                <li>Age: 20</li>
-                <li>Faculty: Geography</li>
-                <li>Web address: -</li>
-                <li>Interests: sports, movies, going out</li>
-                <li>Profile picture:<img src="1.jpg"></li>
-            </ul>
-            <button type="button">Edit contact</button>
-            <button type="button">Delete contact</button>
+                </div>
 
+                <div class="container">
+                
+                    <img src="1.jpg">
+                    <ul>
+                        <li>First name:<span contenteditable="true" spellcheck="false">Razvan</span></li>
+                        <li>Last name: <span contenteditable="true" spellcheck="false">Marin</span></li>
+                        <li>Phone number: <span contenteditable="true" spellcheck="false">0745094878</span></li>
+                        <li>Email: <span contenteditable="true" spellcheck="false">razvanmarin98@yahoo.com</span></li>
+                        <li>City: <span contenteditable="true" spellcheck="false">Cluj</span></li>
+                        <li>Age: <span contenteditable="true" spellcheck="false">21</span></li>
+                        <li>Faculty: <span contenteditable="true" spellcheck="false">Computer Science</span></li>
+                        <li>Web address: <span contenteditable="true" spellcheck="false">www.rmarin.com</span></li>
+                        <li>Interests: <span contenteditable="true" spellcheck="false">tehnologii web, climbing</span></li>
+                        <li><button class="contact_button">Save</button><button class="contact_button">Delete</button></li>
+                    </ul>
 
-            <h2>Close friends:</h2>
-            <p onclick="show_3()">Rares Arvinte</p>
-            <ul id="p_3">
-                <li>First name: Rares</li>
-                <li>Last name: Arvinte</li>
-                <li>Phone number: 0744999654</li>
-                <li>Email: raresa@gmail.com</li>
-                <li>City: Iasi</li>
-                <li>Age: 20</li>
-                <li>Faculty: Chemistry</li>
-                <li>Web address: -</li>
-                <li>Interests: reading, runnning</li>
-                <li>Profile picture:<img src="1.jpg"></li>
-            </ul>
-            <button type="button">Edit contact</button>
-            <button type="button">Delete contact</button>
+                </div>
+
+                <div class="container">
+                
+                    <img src="1.jpg">
+                    <ul>
+                        <li>First name:<span contenteditable="true" spellcheck="false">Razvan</span></li>
+                        <li>Last name: <span contenteditable="true" spellcheck="false">Marin</span></li>
+                        <li>Phone number: <span contenteditable="true" spellcheck="false">0745094878</span></li>
+                        <li>Email: <span contenteditable="true" spellcheck="false">razvanmarin98@yahoo.com</span></li>
+                        <li>City: <span contenteditable="true" spellcheck="false">Cluj</span></li>
+                        <li>Age: <span contenteditable="true" spellcheck="false">21</span></li>
+                        <li>Faculty: <span contenteditable="true" spellcheck="false">Computer Science</span></li>
+                        <li>Web address: <span contenteditable="true" spellcheck="false">www.rmarin.com</span></li>
+                        <li>Interests: <span contenteditable="true" spellcheck="false">tehnologii web, climbing</span></li>
+                        <li><button class="contact_button">Save</button><button class="contact_button">Delete</button></li>
+                    </ul>
+
+                </div>                
+
+                <div class="container">
+                
+                    <img src="1.jpg">
+                    <ul>
+                        <li>First name:<span contenteditable="true" spellcheck="false">Razvan</span></li>
+                        <li>Last name: <span contenteditable="true" spellcheck="false">Marin</span></li>
+                        <li>Phone number: <span contenteditable="true" spellcheck="false">0745094878</span></li>
+                        <li>Email: <span contenteditable="true" spellcheck="false">razvanmarin98@yahoo.com</span></li>
+                        <li>City: <span contenteditable="true" spellcheck="false">Cluj</span></li>
+                        <li>Age: <span contenteditable="true" spellcheck="false">21</span></li>
+                        <li>Faculty: <span contenteditable="true" spellcheck="false">Computer Science</span></li>
+                        <li>Web address: <span contenteditable="true" spellcheck="false">www.rmarin.com</span></li>
+                        <li>Interests: <span contenteditable="true" spellcheck="false">tehnologii web, climbing</span></li>
+                        <li><button class="contact_button">Save</button><button class="contact_button">Delete</button></li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <h3>Sport club:</h3>
+           
+            <div class="align_items">
+
+                <div class="container">
+                
+                    <img src="1.jpg">
+                    <ul>
+                        <li>First name:<span contenteditable="true" spellcheck="false">Razvan</span></li>
+                        <li>Last name: <span contenteditable="true" spellcheck="false">Marin</span></li>
+                        <li>Phone number: <span contenteditable="true" spellcheck="false">0745094878</span></li>
+                        <li>Email: <span contenteditable="true" spellcheck="false">razvanmarin98@yahoo.com</span></li>
+                        <li>City: <span contenteditable="true" spellcheck="false">Cluj</span></li>
+                        <li>Age: <span contenteditable="true" spellcheck="false">21</span></li>
+                        <li>Faculty: <span contenteditable="true" spellcheck="false">Computer Science</span></li>
+                        <li>Web address: <span contenteditable="true" spellcheck="false">www.rmarin.com</span></li>
+                        <li>Interests: <span contenteditable="true" spellcheck="false">tehnologii web, climbing</span></li>
+                        <li><button class="contact_button">Save</button><button class="contact_button">Delete</button></li>
+                    </ul>
+
+                </div>
+
+                <div class="container">
+                
+                    <img src="1.jpg">
+                    <ul>
+                        <li>First name:<span contenteditable="true" spellcheck="false">Razvan</span></li>
+                        <li>Last name: <span contenteditable="true" spellcheck="false">Marin</span></li>
+                        <li>Phone number: <span contenteditable="true" spellcheck="false">0745094878</span></li>
+                        <li>Email: <span contenteditable="true" spellcheck="false">razvanmarin98@yahoo.com</span></li>
+                        <li>City: <span contenteditable="true" spellcheck="false">Cluj</span></li>
+                        <li>Age: <span contenteditable="true" spellcheck="false">21</span></li>
+                        <li>Faculty: <span contenteditable="true" spellcheck="false">Computer Science</span></li>
+                        <li>Web address: <span contenteditable="true" spellcheck="false">www.rmarin.com</span></li>
+                        <li>Interests: <span contenteditable="true" spellcheck="false">tehnologii web, climbing</span></li>
+                        <li><button class="contact_button">Save</button><button class="contact_button">Delete</button></li>
+                    </ul>
+
+                </div>
+
+                <div class="container">
+                
+                    <img src="1.jpg">
+                    <ul>
+                        <li>First name:<span contenteditable="true" spellcheck="false">Razvan</span></li>
+                        <li>Last name: <span contenteditable="true" spellcheck="false">Marin</span></li>
+                        <li>Phone number: <span contenteditable="true" spellcheck="false">0745094878</span></li>
+                        <li>Email: <span contenteditable="true" spellcheck="false">razvanmarin98@yahoo.com</span></li>
+                        <li>City: <span contenteditable="true" spellcheck="false">Cluj</span></li>
+                        <li>Age: <span contenteditable="true" spellcheck="false">21</span></li>
+                        <li>Faculty: <span contenteditable="true" spellcheck="false">Computer Science</span></li>
+                        <li>Web address: <span contenteditable="true" spellcheck="false">www.rmarin.com</span></li>
+                        <li>Interests: <span contenteditable="true" spellcheck="false">tehnologii web, climbing</span></li>
+                        <li><button class="contact_button">Save</button><button class="contact_button">Delete</button></li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <h3>Close friends:</h3>
+
+            <div class="align_items">
+
+                <div class="container">
+                
+                    <img src="1.jpg">
+                    <ul>
+                        <li>First name:<span contenteditable="true" spellcheck="false">Razvan</span></li>
+                        <li>Last name: <span contenteditable="true" spellcheck="false">Marin</span></li>
+                        <li>Phone number: <span contenteditable="true" spellcheck="false">0745094878</span></li>
+                        <li>Email: <span contenteditable="true" spellcheck="false">razvanmarin98@yahoo.com</span></li>
+                        <li>City: <span contenteditable="true" spellcheck="false">Cluj</span></li>
+                        <li>Age: <span contenteditable="true" spellcheck="false">21</span></li>
+                        <li>Faculty: <span contenteditable="true" spellcheck="false">Computer Science</span></li>
+                        <li>Web address: <span contenteditable="true" spellcheck="false">www.rmarin.com</span></li>
+                        <li>Interests: <span contenteditable="true" spellcheck="false">tehnologii web, climbing</span></li>
+                        <li><button class="contact_button">Save</button><button class="contact_button">Delete</button></li>
+                    </ul>
+
+                </div>
+                
+            </div>
 
         </div>
 
@@ -98,47 +215,96 @@
     <section>
     
         <div id="sidebar">
+
+            <h2>Filters</h2>
+            <p>You can filter your contacts every way you want.</p>
             
-            <h3>Filters</h3>
+            <div class="sidebar_container dadada">
 
-            <form action="" method="">
+                <form action="" method="">
 
-                <label for="fname">First name:</label>
-                <input type="text" id="fname" name="user_fname">
+                    <div class="form_div">
+                            
+                        <label for="fname">First name:</label>
+                        <input type="text" id="fname" name="user_fname">
+                        
+                    </div>
 
-                <label for="lname">Last name:</label>
-                <input type="text" id="lname" name="user_lname">
+                    <div class="form_div">
 
-                <label for="phone_nr">Phone number:</label>
-                <input type="tel" id="phone_nr" name="phone_nr">
+                        <label for="lname">Last name:</label>
+                        <input type="text" id="lname" name="user_lname">
 
-                <label for="mail">Email:</label>
-                <input type="email" id="mail" name="mail">
+                    </div>
 
-                <label for="min_age">Minimum age:</label>
-                <input type="number" id="min_age" name="user_min_age" min="1" max="120">
+                    <div class="form_div">
 
-                <label for="max_age">Maximum age:</label>
-                <input type="number" id="max_age" name="user_max_age" min="1" max="120">
+                        <label for="phone_nr">Phone number:</label>
+                        <input type="tel" id="phone_nr" name="phone_nr">
+                        
+                    </div>
 
-                <label for="city_address">City:</label>
-                <input type="text" id="city_address" name="user_cityaddress">
+                    <div class="form_div">
 
-                <label for="what_faculty">Faculty:</label>
-                <input type="text" id="what_faculty" name="what_faculty">
+                        <label for="mail">Email:</label>
+                        <input type="email" id="mail" name="mail">
 
-                <label for="user_interests">Interests:</label>
-                <input type="text" id="user_interests" name="interests">
+                    </div>
 
-                <input type="submit" name="submit_filter" value="Filter">
+                    <div class="form_div">
 
-            </form>
+                        <label for="min_age">Minimum age:</label>
+                        <input type="number" id="min_age" name="user_min_age" min="1" max="120">
 
-            <input type="submit" name="submit_vCard" value="Export vCard">
-            
-            <input type="submit" name="submit_CSV" value="Export CSV">
-        
-            <input type="submit" name="submit_Atom" value="Export Atom">
+                    </div>
+
+                    <div class="form_div">
+
+                        <label for="max_age">Maximum age:</label>
+                        <input type="number" id="max_age" name="user_max_age" min="1" max="120">
+
+                    </div>
+
+                    <div class="form_div">
+
+                        <label for="city_address">City:</label>
+                        <input type="text" id="city_address" name="user_cityaddress">
+
+                    </div>
+
+                    <div class="form_div">
+
+                        <label for="what_faculty">Faculty:</label>
+                        <input type="text" id="what_faculty" name="what_faculty">
+
+                    </div>
+
+                    <div class="form_div">
+
+                        <label for="user_interests">Interests:</label>
+                        <input type="text" id="user_interests" name="interests">
+
+                    </div>
+
+                    <div class="form_div">
+
+                        <input type="submit" name="submit_filter" value="Filter">
+
+                    </div>
+
+                </form>
+
+                <div class="align_buttons dadada">
+
+                    <input type="submit" name="submit_vCard" value="Export vCard">
+                        
+                    <input type="submit" name="submit_CSV" value="Export CSV">
+                    
+                    <input type="submit" name="submit_Atom" value="Export Atom">
+
+                </div>
+
+            </div>
 
         </div>
 
@@ -148,61 +314,169 @@
         
         <div id="filteredContacts">
 
-            <ul>
+            <div class="align_items">
+
+                <div class="container">
                 
-                <li>        
-                    <pre>
-                        First name: Ilinca
-                        Last name: Pascu
-                        Phone number: 0723094324
-                        Email: ilinca_pascu@yahoo.com
-                        City: Iasi
-                        Age: 20
-                        Faculty: Geography
-                        Web address: -
-                        Interests: sports, movies, going out
-                        Profile picture:
-                        <img src="1.jpg">
-                    </pre>
-                </li>
+                    <img src="1.jpg">
+                    <ul>
+                        <li>First name:<span contenteditable="true" spellcheck="false">Razvan</span></li>
+                        <li>Last name: <span contenteditable="true" spellcheck="false">Marin</span></li>
+                        <li>Phone number: <span contenteditable="true" spellcheck="false">0745094878</span></li>
+                        <li>Email: <span contenteditable="true" spellcheck="false">razvanmarin98@yahoo.com</span></li>
+                        <li>City: <span contenteditable="true" spellcheck="false">Cluj</span></li>
+                        <li>Age: <span contenteditable="true" spellcheck="false">21</span></li>
+                        <li>Faculty: <span contenteditable="true" spellcheck="false">Computer Science</span></li>
+                        <li>Web address: <span contenteditable="true" spellcheck="false">www.rmarin.com</span></li>
+                        <li>Interests: <span contenteditable="true" spellcheck="false">tehnologii web, climbing</span></li>
+                        <li><button class="contact_button">Save</button><button class="contact_button">Delete</button></li>
+                    </ul>
 
-                <li>        
-                    <pre>
-                        First name: Razvan
-                        Last name: Marin
-                        Phone number: 0745094878
-                        Email: razvanmarin98@yahoo.com
-                        City: Cluj
-                        Age: 21
-                        Faculty: Computer Science
-                        Web address: www.rmarin.com
-                        Interests: tehnologii web, climbing
-                        Profile picture:
-                        <img src="1.jpg">
-                    </pre>
-                </li>
+                </div>
 
-                <li>        
-                    <pre>
-                        First name: Rares
-                        Last name: Arvinte
-                        Phone number: 0744999654
-                        Email: raresa@gmail.com
-                        City: Iasi
-                        Faculty: Chemistry
-                        Web address: -
-                        Interests: reading, runnning
-                        Profile picture:
-                        <img src="3.jpg">
-                    </pre>
-                </li>
+                <div class="container">
+                
+                    <img src="1.jpg">
+                    <ul>
+                        <li>First name:<span contenteditable="true" spellcheck="false">Razvan</span></li>
+                        <li>Last name: <span contenteditable="true" spellcheck="false">Marin</span></li>
+                        <li>Phone number: <span contenteditable="true" spellcheck="false">0745094878</span></li>
+                        <li>Email: <span contenteditable="true" spellcheck="false">razvanmarin98@yahoo.com</span></li>
+                        <li>City: <span contenteditable="true" spellcheck="false">Cluj</span></li>
+                        <li>Age: <span contenteditable="true" spellcheck="false">21</span></li>
+                        <li>Faculty: <span contenteditable="true" spellcheck="false">Computer Science</span></li>
+                        <li>Web address: <span contenteditable="true" spellcheck="false">www.rmarin.com</span></li>
+                        <li>Interests: <span contenteditable="true" spellcheck="false">tehnologii web, climbing</span></li>
+                        <li><button class="contact_button">Save</button><button class="contact_button">Delete</button></li>
+                    </ul>
 
-            </ul>
+                </div>
+
+                <div class="container">
+                
+                    <img src="1.jpg">
+                    <ul>
+                        <li>First name:<span contenteditable="true" spellcheck="false">Razvan</span></li>
+                        <li>Last name: <span contenteditable="true" spellcheck="false">Marin</span></li>
+                        <li>Phone number: <span contenteditable="true" spellcheck="false">0745094878</span></li>
+                        <li>Email: <span contenteditable="true" spellcheck="false">razvanmarin98@yahoo.com</span></li>
+                        <li>City: <span contenteditable="true" spellcheck="false">Cluj</span></li>
+                        <li>Age: <span contenteditable="true" spellcheck="false">21</span></li>
+                        <li>Faculty: <span contenteditable="true" spellcheck="false">Computer Science</span></li>
+                        <li>Web address: <span contenteditable="true" spellcheck="false">www.rmarin.com</span></li>
+                        <li>Interests: <span contenteditable="true" spellcheck="false">tehnologii web, climbing</span></li>
+                        <li><button class="contact_button">Save</button><button class="contact_button">Delete</button></li>
+                    </ul>
+
+                </div>
+
+            </div>
 
         </div>
 
     </section>
 
+    <section>
+    
+        <div id="addContact" class="form_style">
+            
+            <h2 class="form_title">Add your new contact</h2>
+            
+            <form action="" method="">
+
+                <div class="form_div">
+
+                    <label for="firstname">First name:</label>
+                    <input type="text" id="firstname" name="first_name">
+
+                </div>
+
+                <div class="form_div">
+
+                    <label for="lastname">Last name:</label>
+                    <input type="text" id="lastname" name="last_name">
+
+                </div>
+
+                <div class="form_div">
+
+                    <label for="phone">Phone number:</label>
+                    <input type="tel" id="phone" name="phone_number">
+
+                </div>
+
+                <div class="form_div">
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="user_email">
+
+                </div>
+
+                <div class="form_div">
+
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="user_city">
+
+                </div>
+
+                <div class="form_div">
+
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="user_age">
+
+                </div>
+
+                <div class="form_div">
+
+                    <label for="faculty">Faculty:</label>
+                    <input type="text" id="faculty" name="user_faculty">
+
+                </div>
+
+                <div class="form_div">
+
+                    <label for="web">Web address:</label>
+                    <input type="text" id="web" name="user_web">
+
+                </div>
+
+                <div class="form_div">
+
+                    <label for="interests">Interests:</label>
+                    <input type="text" id="interests" name="user_interests">
+
+                </div>
+
+                <div class="form_div">
+
+                    <label for="avatar">Profile picture:</label>
+                    <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
+
+                </div>
+
+                <div class="form_div">
+
+                    <label for="group">Group:</label>
+                    <select id="group" name="group">
+                        <option value="work">Work</option>
+                        <option value="school">School</option>
+                        <option value="Fun">Fun</option>
+                        <option value="Close friends">Close friends</option>
+                    </select>
+
+                </div>
+
+                <div class="form_div">
+
+                    <input type="submit" name="button_addcontact" value="Add contact">
+            
+                </div>
+
+            </form>
+
+        </div>
+
+    </section>
 
     <script src="js.js"></script>
 
