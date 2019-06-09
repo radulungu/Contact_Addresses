@@ -3,83 +3,10 @@
     session_start();
 
     require_once 'database_conn.php';
-
-    function register($conn, $first_name, $last_name, $email, $password, $phone_number) {
-
-        $query = "SELECT * FROM user WHERE email = ? LIMIT 0, 1";
-
-        $stmt = $conn -> prepare($query);
-
-        $email = htmlspecialchars(strip_tags($email));
-
-        $stmt -> bind_param("s", $email);
-
-        $stmt -> execute();
-
-        $row_count = $stmt -> num_rows();
-
-        $stmt -> close();
-
-        if ($row_count > 0) {
-
-            $html_alert = "Email already exists!";
-            return $html_alert;
-        } else {
-
-            $hashedPassword = md5($password);
-
-            $registerStmt = $conn -> prepare('INSERT INTO user(first_name, last_name, email, password, phone_number) VALUES(?,?,?,?,?)');
-
-            $registerStmt -> bind_param("ssssi", $first_name, $last_name, $email, $hashedPassword, $phone_number);
-
-            $success = $registerStmt -> execute();
-
-            $registerStmt -> close();
-
-            return $success;
-        }
-
-    }
-
-    function login($conn, $email, $password) {
-
-        $hashedPassword = md5($password);
-
-        $loginStmt = $conn -> prepare('SELECT * FROM user WHERE email = ? AND password = ?');
-
-        $loginStmt -> bind_param('ss', $email, $hashedPassword);
-		echo $email;
-		echo $hashedPassword;
-
-        $loginStmt -> execute();
-
-        $results = $loginStmt -> get_result();
-
-        $loginStmt -> close();
-
-        if ($results -> num_rows  === 1) {
-
-            $firstRow = $results -> fetch_assoc();
-
-            $_SESSION['user_id'] = $firstRow['user_id'];
-			header('Location: index.php');
-			
-        } else {
-			echo "please log in using correct credentials";
-		}
-
-    }
-
-    if (isset($_POST['register_button'])) {
-
-        $reg_resp = register($conn, $_POST['fname_register'], $_POST['lname_register'], $_POST['email_register'], $_POST['password_register'], $_POST['phone_register']);
-    }
-
-    if (isset($_POST['login_button'])) {
-
-        $login_resp = login($conn, $_POST['email_login'], $_POST['password_login']);
-		
-    }
+    
+    require_once 'login_register.model.php';
+    
+    require_once 'login_register.controller.php';
 
 ?>
 
@@ -125,7 +52,7 @@
             
             <h2 class="form_title">Log In</h2>
 
-            <form action="login_register.php" method="post">
+            <form action="" method="post">
                 
                 <div class="form_div">
                     
