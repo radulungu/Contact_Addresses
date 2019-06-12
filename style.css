@@ -4,11 +4,7 @@
 
 html {
 	background-color: #e0c5bd;
-<<<<<<< HEAD
 	font-family: 'Quicksand', sans-serif;
-=======
-	font-family: 'Quicksand Medium', sans-serif;
->>>>>>> 99a6ec654f424e71763ec32087f8d9d21764f92e
 }
 
 body {
@@ -31,11 +27,7 @@ body {
 	color: #fdf9f3;
 	border: none;
 	padding: 20px 30px;
-<<<<<<< HEAD
 	font-size: 25px;
-=======
-	font-size: 130%;
->>>>>>> 99a6ec654f424e71763ec32087f8d9d21764f92e
 }
 
 .navbar button:hover {
@@ -51,16 +43,6 @@ button:focus {
 	text-align: center;
 }
 
-<<<<<<< HEAD
-=======
-#home form {
-	width: 100px;
-	display: inline-block;
-	color: #fdf9f3;
-	margin: 0 auto;
-}
-
->>>>>>> 99a6ec654f424e71763ec32087f8d9d21764f92e
 #home h2 {
 	font-size: 40px;
 	padding-top: 30px;
@@ -71,7 +53,6 @@ button:focus {
 	padding: 30px 0px;
 }
 
-<<<<<<< HEAD
 #home label {
 	font-size: 20px;
 }
@@ -86,17 +67,11 @@ input:focus {
 	outline: 0;
 }
 
-=======
->>>>>>> 99a6ec654f424e71763ec32087f8d9d21764f92e
 .contact_create {
 	border: none;
 	border-radius: 10px 0px 10px 0px;
 	width: 80px;
 	height: 30px;
-<<<<<<< HEAD
-=======
-	margin: 20px 20px;
->>>>>>> 99a6ec654f424e71763ec32087f8d9d21764f92e
 	background-color: #af958f;
 	color: #fdf9f3;
 }
@@ -111,7 +86,6 @@ input:focus {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-<<<<<<< HEAD
 	margin: 10px auto;
 }
 
@@ -121,25 +95,11 @@ input:focus {
 }
 
 .container ul {
-=======
-	margin: 0 auto;
-	margin-bottom: 10px;
-}
-
-#home img, #filteredContacts img {
-	width: 300px;
-	height: 200px;
-	margin-right: 0;
-}
-
-#home ul, #filteredContacts ul {
->>>>>>> 99a6ec654f424e71763ec32087f8d9d21764f92e
 	list-style-type: none;
 	background-color: #af958f;
 	color: #fdf9f3;
 	width: 300px;
 	height: 250px;
-<<<<<<< HEAD
 	padding: 30px;
 	text-align: justify;
 	justify-content: center;
@@ -149,18 +109,6 @@ input:focus {
 }
 
 .container li {
-=======
-	margin-left: 0;
-	padding: 30px 30px 30px 30px;
-	text-align: justify;
-	justify-content: center;
-	overflow: auto;
-	box-shadow: 0px 0px 25px 0px #888888;;
-	border-radius: 40px 0px 0px 0px;
-}
-
-#home li, #filteredContacts li {
->>>>>>> 99a6ec654f424e71763ec32087f8d9d21764f92e
 	color: #fdf9f3;
 	font-size: 20px;
 	margin-bottom: 10px;
@@ -176,7 +124,6 @@ span:focus {
 	border-radius: 10px 0px 10px 0px;
 	width: 80px;
 	height: 30px;
-<<<<<<< HEAD
 	background-color: #fdf9f3;
 	margin: 20px 20px 0px 0px;
 }
@@ -271,12 +218,6 @@ input:not([type=submit]) {
 .align_buttons input {
 	margin: 0px 10px;
 }
-=======
-	margin: 20px 20px;
-	background-color: #fdf9f3;
-}
-
->>>>>>> 99a6ec654f424e71763ec32087f8d9d21764f92e
 
 #addContact, #login, #register {
 	display: none;
@@ -286,14 +227,11 @@ input:not([type=submit]) {
 }
 
 #filteredContacts {
-	display: none;
 	margin: 0 auto;
 	text-align: center;
 }
 
-<<<<<<< HEAD
-#filteredTitle {
-	display: none;
+#filtered_contacts_title {
 	font-size: 20px;
 	padding: 10px 0px;
 	text-align: center;
@@ -356,13 +294,17 @@ input:not([type=submit]) {
  	border-radius: 20px 20px 0px 0px;
  }
 
-=======
->>>>>>> 99a6ec654f424e71763ec32087f8d9d21764f92e
+#edit_contact_form {
+	color: #000000;
+	width: 400px;
+	margin: 5% auto;
+	padding:20px;
+}
+
 #addContact form, #register form, #login form {
 	padding: 20px;
 }
 
-<<<<<<< HEAD
 .form_style input[type="submit"] {
 	border: none;
 	margin-top: 10px; 
@@ -377,6 +319,32 @@ input:not([type=submit]) {
 	margin: 0 auto;
 	background: transparent;
 	background-color: #fdf9f3;
+}
+
+.good_alert {
+	color: #4BB543;
+	font-size: 20px;
+}
+
+.bad_alert {
+	color: #D8000C;
+	font-size: 20px;
+}
+
+.form_div ::placeholder {
+	color: #D8000C;
+}
+
+#filteredTitle {
+	text-align: center;
+	color: #fdf9f3;
+	font-size: 40px;
+	margin: 50px 0px;
+}
+
+.export_buttons {
+	margin-top: 0px;
+	margin-bottom: 100px;
 }
 
 @media screen and (max-width: 1482px) {
@@ -443,10 +411,4 @@ input:not([type=submit]) {
 		width: 70%;
 		height: auto;
 	}
-=======
-input:not([type=submit]) {
-	border: none;
-	border-bottom: 1px solid #fdf9f3;
-	background: transparent;
->>>>>>> 99a6ec654f424e71763ec32087f8d9d21764f92e
 }

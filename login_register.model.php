@@ -1,5 +1,7 @@
 <?php
 
+    require_once 'database_conn.php';
+
     function register($conn, $first_name, $last_name, $email, $password, $phone_number) {
 
         $query = "SELECT * FROM user WHERE email = ? LIMIT 0, 1";
@@ -19,7 +21,9 @@
         if ($row_count > 0) {
 
             $html_alert = "Email already exists!";
+
             return $html_alert;
+        
         } else {
 
             $hashedPassword = md5($password);
@@ -60,14 +64,12 @@
 
         if(isset($_SESSION['user_id']) && !empty($_SESSION['user_id'])) {
             
-            echo "true";
-            echo $_SESSION['user_id'];
+            header('Location: /index.php');
+        
         } else {
-
-            echo "false";
+            
+            header('Location: /login_register.php?action=login');
         }
-
-        header('Location: /index.php');
 
         return NULL;
     }

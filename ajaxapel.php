@@ -1,12 +1,18 @@
 <?php
-	error_reporting(E_ERROR);
-	require_once 'database_conn.php';
-	include_once 'index.controller.php';
-	
 
+	error_reporting(E_ERROR);
+
+	require_once 'database_conn.php';
+	
+	session_start();
+	//include_once 'index.controller.php';
 
 	$q = $_GET['q'];
-	 function lolo($conn){
+
+	function lolo() {
+ 		
+ 		global $conn;
+ 		
  		$q = $_GET['q'];
 
         $query = "SELECT * FROM contacts where phone_number = ? and user_id =?";
@@ -17,23 +23,28 @@
 
         $stmt -> execute();
         
-      $rows = $stmt->get_result(); 
+      	$rows = $stmt->get_result(); 
   
-        return $rows->fetch_assoc();   
+        return $rows->num_rows;
+	}
 
-      
-}
+	$x = lolo();
 
-	if(array_values(lolo($conn))){
-	  $hint = ""; 
+	if($x == 1) {
+		
+		$hint = ""; 
 	 
-	 if ($q !== "") {
+		if ($q !== "") {
 	  
-	   	$hint = "this number already exists";
-	   	echo $hint;
-	   
-	}} else{
-	 $hint = "no suggestion";
+	   		$hint = " this number already exists!";
+	   		
+	   		echo $hint;
+		}
+
+	} else {
+	 
+	 $hint = " no suggestion available!";
+	 
 	 echo $hint;
 	}
 

@@ -77,13 +77,13 @@ function filterContacts($conn)
     }
 
     if (!empty($faculty)) {
-        $query = $query . " AND faculty=?";
+        $query = $query . " AND faculty LIKE CONCAT('%',?,'%')";
         $type = $type . 's';
         array_push($conditions, $faculty);
     }
 
     if (!empty($interests)) {
-        $query = $query . " AND interests=?";
+        $query = $query . " AND interests LIKE CONCAT('%',?,'%') ";
         $type = $type . 's';
         array_push($conditions, $interests);
     }

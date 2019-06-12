@@ -52,19 +52,19 @@
             
             <h2 class="form_title">Log In</h2>
 
-            <form action="" method="post">
+            <form action="login_register.php" method="post">
                 
                 <div class="form_div">
                     
-                    <label for="email_login">Email:</label>
-                    <input type="email" id="email_login" name="email_login">
+                    <label for="email_login">Email*</label>
+                    <input type="email" id="email_login" name="email_login" placeholder="<?php echo $email_login_error; ?>" required>
                 
                 </div>
 
                 <div class="form_div">
                     
-                    <label for="password_login">Password:</label>
-                    <input type="text" id="password_login" name="password_login">
+                    <label for="password_login">Password*</label>
+                    <input type="password" id="password_login" name="password_login" placeholder= "<?php echo $password_login_error ?>" required>
                 
                 </div>
 
@@ -82,7 +82,7 @@
 
     <section>
     
-        <div id="register"  class="form_style">
+        <div id="register" class="form_style">
             
             <h2 class="form_title">Register</h2>
             
@@ -90,36 +90,36 @@
 
                 <div class="form_div">
 
-                    <label for="fname_register">First name:</label>
-                    <input type="text" id="fname_register" name="fname_register">
+                    <label for="fname_register">First name*</label>
+                    <input type="text" id="fname_register" name="fname_register" placeholder="<?php echo $fname_register_error;?>" required>
 
                 </div>
 
                 <div class="form_div">
 
-                    <label for="lname_register">Last name:</label>
-                    <input type="text" id="lname_register" name="lname_register">
+                    <label for="lname_register">Last name*</label>
+                    <input type="text" id="lname_register" name="lname_register" placeholder="<?php echo $lname_register_error;?>" required>
 
                 </div>
 
                 <div class="form_div">
 
-                    <label for="email_register">Email:</label>
-                    <input type="email" id="email_register" name="email_register">
+                    <label for="email_register">Email*</label>
+                    <input type="email" id="email_register" name="email_register" placeholder="<?php echo $email_register_error;?>" required>
 
                 </div>
 
                 <div class="form_div">
 
-                    <label for="phone_register">Phone number:</label>
-                    <input type="tel" id="phone_register" name="phone_register">
+                    <label for="phone_register">Phone number*</label>
+                    <input type="tel" id="phone_register" name="phone_register" placeholder="<?php echo $phone_register_error;?>" required>
 
                 </div>
 
                 <div class="form_div">
 
-                    <label for="password_register">Password:</label>
-                    <input type="text" id="password_register" name="password_register">
+                    <label for="password_register">Password*</label>
+                    <input type="password" id="password_register" name="password_register" placeholder="<?php echo $password_register_error;?>" required>
 
                 </div>
 
@@ -136,6 +136,34 @@
     </section>
 
     <script src="js.js"></script>
+
+    <script>
+        
+        <?php
+
+            if (isset($_GET['action'])) {
+
+                if ($_GET['action'] == 'login') {
+                    
+                    echo "login_js();";
+                }
+            }
+
+            if (isset($_POST['fname_register'])) {
+                
+                if (isset($reg_resp) && $reg_resp == 1) {
+                    
+                    echo "login_js();";
+                
+                } else {
+
+                    echo "register_js();";
+                }
+            }
+            
+        ?>
+
+    </script>
 
 </body>
 </html>

@@ -3,14 +3,11 @@ function functionContacts() {
 	document.getElementById("home").style.display = "block";
 	document.getElementById("sidebar").style.display = "none";
 	document.getElementById("addContact").style.display = "none";
-	document.getElementById("filteredContacts").style.display = "none";
 }
 
 function functionFilterContacts() {
 
 	document.getElementById("sidebar").style.display = "block";
-	document.getElementById("filteredContacts").style.display = "flex";
-	document.getElementById("filteredContacts").style.flexDirection = "row";
 	document.getElementById("home").style.display = "none";
 	document.getElementById("addContact").style.display = "none";
 }
@@ -19,7 +16,6 @@ function functionAdd() {
 
 	document.getElementById("addContact").style.display = "flex";
 	document.getElementById("addContact").style.flexDirection = "column";
-	document.getElementById("filteredContacts").style.display = "none";
 	document.getElementById("sidebar").style.display = "none";
 	document.getElementById("home").style.display = "none";
 }
@@ -34,20 +30,23 @@ function home() {
 	document.getElementById("home_page").style.display = "block";
 	document.getElementById("login").style.display = "none";
 	document.getElementById("register").style.display = "none";
+	document.getElementById("filteredTitle").style.display = "none";
 }
 
-function login() {
+function login_js() {
   
   document.getElementById("login").style.display = "flex";
   document.getElementById("login").style.flexDirection = "column";
   document.getElementById("register").style.display = "none";
   document.getElementById("home_page").style.display = "none";
+  document.getElementById("filteredTitle").style.display = "none";
 }
 
-function register() {
+function register_js() {
   
   document.getElementById("register").style.display = "flex";
   document.getElementById("register").style.flexDirection = "column";
   document.getElementById("login").style.display = "none";
   document.getElementById("home_page").style.display = "none";
+  document.getElementById("filteredTitle").style.display = "none";
 }

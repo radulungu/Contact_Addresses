@@ -65,18 +65,18 @@ if (isset($_GET['type'])) {
 
 			foreach($results as $result) {
 				
-				$name = $result["first_name"];
+					$name = $result["first_name"];
 				$last_name = $result["last_name"];
 				$link = "http://localhost:8181/" . "?id=" . $result["id"];
 				$id = $result["id"];
-				$created_at = date("Y-m-d H:i:s");
-				$descriere = $result["email"] ." ". $result["city"];
+				$age = $result["age"];
+				$phone = $result["phone_number"];
+				$descriere = $result["email"] ." ". $result["city"]   ." ". $result["phone_number"];
 				$entry = myCreateChild($atom, $feed, "entry");
-				
-				$title = myCreateEntry($atom, $entry, "title", $last_name . " " . $name);
-				$link = myCreateEntry($atom ,$entry, "link", "", array("href" => $link));
+				$title = myCreateEntry($atom, $entry, "name", $last_name . " " . $name);
 				$id = myCreateEntry($atom, $entry, "id", $id);
-				$updated = myCreateEntry($atom, $entry, "updated", $created_at);
+				$phone = myCreateEntry($atom, $entry, "phone", $phone);
+				$age = myCreateEntry($atom, $entry, "age", $age);
 				$summary = myCreateEntry($atom, $entry, "summary", $descriere);
 			}
 				
@@ -88,11 +88,9 @@ if (isset($_GET['type'])) {
 		#creare feed
 		$feed = myCreateChild($atom, $atom, "feed");
 		#creare header
-		myCreateEntry($atom, $feed, "title", "Latest Petitions");
-			
-		myCreateEntry($atom, $feed, "updated", date('Y')."-06-17T13:40:02Z");
-			
-		myCreateEntry($atom, $feed, "id", "Contacte");
+		myCreateEntry($atom, $feed, "title", "My contacts");
+
+
 		
 		$results = $list;
 		

@@ -2,12 +2,17 @@
     
     session_start();
     
-    require_once('database_conn.php');
-    
-    require_once('filtered_contacts.model.php');
-    
-    require_once('filtered_contacts.controller.php');
+    require_once 'database_conn.php';
 
+    require_once 'filtered_contacts.controller.php';
+
+    //require_once 'CSVexport.php';
+
+    $list = array();
+    foreach($allFilteredContacts as $contact) {
+        $list[] = $contact;
+    }
+    
 ?>
 
 <!DOCTYPE html>
@@ -21,29 +26,46 @@
 </head>
 <body>
 
-  <header>
+    <header>
         
-    <div class="navbar">
+        <div class="navbar">
             
-      <form  action="index.php" method="POST">
+            <form  action="index.php" method="POST">
 
-        <button name="back">Back</button>
+                <button name="back">Back</button>
             
-      </form>
+            </form>
         
-    </div>
+        </div>
 
-  </header>
+    </header>
 
-  <section>
+    <section>
+
+        <div id="filteredTitle">
+
+            <h2>Your results:</h2>
+
+        </div>
+
+        <div class="sidebar_container align_buttons export_buttons">
+
+            <input type="submit" onclick="location.href='CSVexport.php?type=vcard&data=<?php echo urlencode(serialize($list)); ?>'" name="submit_vCard" value="Export vCard">
+               
+            <input type="submit" onclick="location.href='CSVexport.php?type=csv&data=<?php echo urlencode(serialize($list)); ?>'" name="submit_CSV" value="Export CSV"">    
+            
+            <input type="submit" onclick="location.href='CSVexport.php?type=atom&data=<?php echo urlencode(serialize($list)); ?>'" name="submit_Atom" value="Export Atom">
+
+        </div>
+
+        <div id="filteredContacts">
 
             <div class="align_items">
-            
-                <?php foreach($allFilteredContacts as $contact): ?>
                 
+                <?php foreach($allFilteredContacts as $contact): ?>
                 <div class="container">
+
                     <form id="editContact" action="index.php" enctype="multipart/form-data" method="POST">
-                    
 
                         <img src=<?=$contact['avatar']?> alt="Profile picture">
                         <ul>
@@ -57,18 +79,20 @@
                             <li>Web address: <input id="eweb" name="eweb" value="<?=$contact['web_address']?>"  ></input></li>
                             <li>Interests: <input id="einterests" name="einterests" value="<?=$contact['interests']?>"  ></input></li>
                             <li class="center_buttons"><button id="save" type="submit" form="editContact" class="contact_button"><a style="text-decoration:none;color:black;" href="edit_contact.php" >Edit</a></button>
-                                                    <button id="delete" type="submit" form="editContact" class="contact_button"><a style="text-decoration:none;color:black;" href="index.php?del=<?php echo $contact['id']; ?>" >Delete</a></button> 
-                        </li>
+                                                    <button id="delete" type="submit" form="editContact" class="contact_button"><a style="text-decoration:none;color:black;" href="index.php?del=<?php echo $contact['id']; ?>" >Delete</a></button></li>
                         </ul>
+                    
                     </form>
-                    </div>
+
+                </div>
 
                 <?php endforeach; ?>
 
-               </div>
+            </div>
 
-      
- </section>
+        </div>
+
+    </section>
 
 </body>
 </html>

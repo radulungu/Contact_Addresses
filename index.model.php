@@ -1,5 +1,7 @@
 <?php
 
+    require_once 'database_conn.php';
+
     $html_alert = '';
 
     function retrieveGroupName($conn) {
@@ -14,7 +16,7 @@
         
         $rows = $stmt->get_result(); 
   
-        return $rows->fetch_assoc();    
+        return $rows->fetch_assoc();
     }
 
     function retrieveGroupId($conn) {
