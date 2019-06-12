@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>OnCo (Online Contacts) - Scholarly Raport</title>
+    <link rel="stylesheet" href="http://scholarly.vernacular.io/scholarly.css">
+</head>
+<body prefix="schema: http://schema.org/ xsd: http://www.w3.org/2001/XMLSchema# sa: https://ns.science.ai/">
+<header>
+    <p class="title">OnCo (Online Contacts) - Scholarly Raport</p>
+</header>
+<article id="article1" typeof="schema:ScholarlyArticle" resource="#">
+    <h1>OnCo (Online Contacts)</h1>
+
+    <section>
+        <ol>
+            <li property="schema:author" typeof="sa:ContributorRole">
+                <a property="schema:author" href="https://github.com/radulungu" typeof="schema:Person">
+                    <span property="schema:givenName">Radu-Ionut</span>
+                    <span property="schema:familyName">Lungu</span>
+                </a>
+                <sup property="sa:roleContactPoint" typeof="schema:ContactPoint">
+                </sup>
+            </li>
+
+            <li property="schema:contributor" typeof="sa:ContributorRole">
+                <a property="schema:contributor" href="https://github.com/DanielaSimiganoschi" typeof="schema:Person">
+                    <span property="schema:givenName">Daniela</span>
+                    <span property="schema:familyName">Simiganoschi</span>
+                </a>
+            </li>
+        </ol>
+        <!-- The affiliation list -->
+        <ol>
+            <a href="https://www.info.uaic.ro/bin/Main/">
+                <span property="schema:name">Universitatea Alexandru Ioan Cuza, Facultatea de Informatica Iasi</span>
+            </a>
+        </ol>
+    </section>
+
+    <section typeof="sa:MaterialsAndMethods">
+        <h2>1. Register</h2>
+        <figure typeof="sa:Image">
+            <figcaption>Register:</figcaption>
+            <img class="imag" src="register.png">
+        </figure>
+        <figure typeof="sa:Image">
+            <figcaption>Bad register:</figcaption>
+            <img class="imag" src="bad_register.png">
+        </figure>
+        <aside typeof="schema:WPSideBar">
+            <p>Acesta este formularul pentru register. El poate fi accesat atunci cand se da click pe butonul "Register" din coltul din drepta de sus al ecranului. Pentru a se inregistra cu succes un utilizator trebuie sa isi completeze prenumele, numele de familie, emailul, numarul de telefon si o parola secreta. Toate campurile sunt obligatorii daca vrei sa iti creezi un cont nou in aplicatie. De asemenea, emailul trebuie sa nu mai fi fost folosit de altcineva inainte pentru a te putea inregistra cu acel email. Dupa ce sunt completate toate campurile si se apasa pe butonul de Register, daca inregistrarea se face cu succes utilizatorul va fi redirectionat catre pagina de Login. Daca inregistrarea esueaza veti primi mesaje cu problemele din cauza carora nu s-a putut efectua inregistrarea.</p>
+        </aside>
+    </section>
+
+    <section typeof="sa:MaterialsAndMethods">
+        <h2>2. Login</h2>
+        <figure typeof="sa:Image">
+            <figcaption>Login:</figcaption>
+            <img class="imag" src="login.png">
+        </figure>
+        <aside typeof="schema:WPSideBar">
+            <p>Acesta este formularul pentru login. El poate fi accesat atunci cand se da click pe butonul "LogIn" din coltul din drepta de sus al ecranului. Pentru a se loga cu succes in aplicatie un utilizator trebuie sa isi completeze emailul si parola. Dupa ce sunt completate cele 2 campuri si se apasa pe butonul de Login, daca logarea se face cu succes utilizatorul va fi redirectionat catre pagina care contine toate contactele acestuia. Daca logarea esueaza veti primi mesaje cu problemele din cauza carora nu s-a putut efectua logarea.</p>
+        </aside>
+    </section>
+
+    <section typeof="sa:MaterialsAndMethods">
+        <h2>3. All Contacts</h2>
+        <figure typeof="sa:Image">
+            <figcaption>All contacts:</figcaption>
+            <img class="imag" src="all_contacts.png">
+        </figure>
+        <aside typeof="schema:WPSideBar">
+            <p>Acesta este pagina pe care sunt afisate toate contactele unui utilizator si toate detaliile legate de acestea. Pe aceasta pagina este redirectionat orice utilizator care s-a logat cu succes in aplicatie. De asemenea aceasta pagina poate fi accesata apasand butonul "All Contacts" din coltul din stanga de sus al paginii. Tot pe aceasta pagina un utilizator poate crea un grup nou in care ulterior sa poate introduce contacte.</p>
+        </aside>
+    </section>
+
+    <section typeof="sa:MaterialsAndMethods">
+        <h2>4. Add Contact</h2>
+        <figure typeof="sa:Image">
+            <figcaption>Add contact:</figcaption>
+            <img class="imag" src="add.png">
+        </figure>
+        <aside typeof="schema:WPSideBar">
+            <p>Acesta este pagina de pe care un utilizator isi poate adauga un nou contact, completand toate detaliile pe care si le doreste. Pentru a nu incerca sa adauge 2 persoane diferite cu acelasi numar de telefon utilizatorul va fi atentionat ca incearca sa introduca un numar de telefon care deja este asociat cu alt contact din lista sa de contacte. Tot aici utilizatorul trebuie sa seteze si o poza pentru contactul pe care doreste sa il adauge si trebuie sa includa acest contact si intr-un anumit grup. Daca adaugarea se va realiza cu succes utilizatorul va fi redirectionat catre pagina "All Contacts".</p>
+        </aside>
+    </section>
+
+    <section typeof="sa:MaterialsAndMethods">
+        <h2>5. Filter contacts</h2>
+        <figure typeof="sa:Image">
+            <figcaption>Filter contacts:</figcaption>
+            <img class="imag" src="filter.png">
+        </figure>
+        <aside typeof="schema:WPSideBar">
+            <p>Acesta este pagina de pe care un utilizator poate cauta un anumit contact sau mai multe contacte folosind criterii multiple de cautare. Pagina poate fi accesata apasand butonul "Filter Contacts" din coltul din stanga de sus al paginii. Dupa ce sunt completate campurile dorite si este apasat butonul Filter utilizatorul va fi redirectionat catre o alta pagina care va cuprinde rezultatele cautarii sale.</p>
+        </aside>
+    </section>
+
+    <section typeof="sa:MaterialsAndMethods">
+        <h2>6. Export results</h2>
+        <figure typeof="sa:Image">
+            <figcaption>Export results:</figcaption>
+            <img class="imag" src="results.png">
+        </figure>
+        <aside typeof="schema:WPSideBar">
+            <p>Dupa ce un utilizator apasa pe butonul de filtrare, acesta va fi redirectionat catre o pagina pe care vor fi afisate rezultatele cautarii sale. Aici acesta va putea vedea toate contactele pe care le-a dorit si va putea sa exporte rezultatele cautarii in 3 diferite formate: vCard, CSV si atom, apasand pe butoanele care corespund acestor tipuri de exporturi.</p>
+        </aside>
+    </section>
+
+    <section typeof="sa:MaterialsAndMethods">
+        <h2>7. Delete contact</h2>
+        <figure typeof="sa:Image">
+            <figcaption>Delete contact:</figcaption>
+            <img class="imag" src="delete.png">
+        </figure>
+        <aside typeof="schema:WPSideBar">
+            <p>La sfarsitul detaliilor legate de fiecare contact, utilizatorul are un buton de "Delete" prin care poate sterge definitiv contactul respectiv din lista sa de contacte.</p>
+        </aside>
+    </section>
+
+    <section typeof="sa:MaterialsAndMethods">
+        <h2>8. Edit contact</h2>
+        <figure typeof="sa:Image">
+            <figcaption>Edit contact:</figcaption>
+            <img class="imag" src="edit.png">
+        </figure>
+        <aside typeof="schema:WPSideBar">
+            <p>La sfarsitul detaliilor legate de fiecare contact, utilizatorul are un buton de "Edit" prin care poate edita toate datele legate de contactul respectiv. Daca utilizatorul apasa pe butonul de "Edit", acesta va fi redirectionat catre o noua pagina unde va putea sa editeze orice isi doreste legat de contactul respectiv.</p>
+        </aside>
+    </section>
+
+    <section typeof="sa:ReferenceList">
+        <h2>9. Bibliografie</h2>
+        <ol>
+            <li typeof="schema:ScholarlyArticle" resource="https://gist.github.com/jakebellacera/635416">
+            <span property="schema:author" typeof="schema:Person">
+                <span property="schema:familyName">Bellacera</span>
+                <span property="schema:givenName">Jake</span>
+            </span>.
+                <cite property="schema:name">PHP to ICS.</cite>
+                <span property="schema:isPartOf" typeof="schema:PublicationVolume">
+                    <span property="schema:isPartOf" typeof="schema:Periodical">
+                        <span property="schema:name">GitHub.</span>
+                    </span>
+                </span>
+            </li>
+            <li typeof="schema:ScholarlyArticle" resource="https://stackoverflow.com/questions/44499177/json-ajax-problems?noredirect=1#comment75992269_44499177">
+            <span property="schema:author" typeof="schema:Person">
+                <span property="schema:familyName">Saini</span>
+                <span property="schema:givenName">R</span>.
+                <span property="schema:givenName">K</span>. ,
+                <span property="schema:familyName">shubham</span>
+                <span property="schema:givenName">715</span>. ,
+                <span property="schema:familyName">White</span>
+                <span property="schema:givenName">Hat</span>
+            </span>.
+                <cite property="schema:name">Intrebari in legatura cu JSON si $ajax.</cite>
+                <span property="schema:isPartOf" typeof="schema:PublicationVolume">
+                    <span property="schema:isPartOf" typeof="schema:Periodical">
+                        <span property="schema:name">StackOverflow.</span>
+                    </span>
+                </span>
+            </li>
+            <li typeof="schema:ScholarlyArticle" resource="https://pixabay.com/">
+                <cite property="schema:name">Imagini cu drept de reutilizare.</cite>
+                <span property="schema:isPartOf" typeof="schema:PublicationVolume">
+                    <span property="schema:isPartOf" typeof="schema:Periodical">
+                        <span property="schema:name">PixAbay.</span>
+                    </span>
+                </span>
+            </li>
+            <li typeof="schema:ScholarlyArticle" resource="https://www.google.ro/search?q=google+images&hl=ro&site=webhp&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjG5P2_gLnUAhVEVhQKHYLaCsAQ_AUIBigB&biw=1920&bih=947#q=google+images&hl=ro&tbm=isch&tbs=sur:fc">
+                <cite property="schema:name">Imagini cu drept de reutilizare.</cite>
+                <span property="schema:isPartOf" typeof="schema:PublicationVolume">
+                    <span property="schema:isPartOf" typeof="schema:Periodical">
+                        <span property="schema:name">Google images.</span>
+                    </span>
+                </span>
+            </li>
+        </ol>
+    </section>
+</article>
+</body>

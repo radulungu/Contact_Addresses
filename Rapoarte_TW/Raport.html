@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>OnCo (Online Contacts) - Scholarly Raport</title>
+    <link rel="stylesheet" href="http://scholarly.vernacular.io/scholarly.css">
+</head>
+<body prefix="schema: http://schema.org/ xsd: http://www.w3.org/2001/XMLSchema# sa: https://ns.science.ai/">
+<header>
+    <p class="title">OnCo (Online Contacts) - Scholarly Raport</p>
+</header>
+<article id="article1" typeof="schema:ScholarlyArticle" resource="#">
+    <h1>OnCo (Online Contacts)</h1>
+
+    <section>
+        <ol>
+            <li property="schema:author" typeof="sa:ContributorRole">
+                <a property="schema:author" href="https://github.com/radulungu" typeof="schema:Person">
+                    <span property="schema:givenName">Radu-Ionut</span>
+                    <span property="schema:familyName">Lungu</span>
+                </a>
+                <sup property="sa:roleContactPoint" typeof="schema:ContactPoint">
+                </sup>
+            </li>
+
+            <li property="schema:contributor" typeof="sa:ContributorRole">
+                <a property="schema:contributor" href="https://github.com/DanielaSimiganoschi" typeof="schema:Person">
+                    <span property="schema:givenName">Daniela</span>
+                    <span property="schema:familyName">Simiganoschi</span>
+                </a>
+            </li>
+        </ol>
+        <!-- The affiliation list -->
+        <ol>
+            <a href="https://www.info.uaic.ro/bin/Main/">
+                <span property="schema:name">Universitatea Alexandru Ioan Cuza, Facultatea de Informatica Iasi</span>
+            </a>
+        </ol>
+    </section>
+
+    <section typeof="sa:Abstract" id="abstract">
+        <h2>Cuprins</h2>
+        <p>1.Descriere</p>
+        <p>2.Tehnologii si limbaje utilizate</p>
+        <p>3.Diagrama aplicatiei + diagrama bazei de date + diagrama use case</p>
+        <p>4.Atributii</p>
+        <p>5.Retrospectiva</p>
+        <p>6.Bibliografie</p>
+    </section>
+
+    <section typeof="sa:MaterialsAndMethods">
+        <h2>1. Descriere</h2>
+        <aside typeof="schema:WPSideBar">
+            <h4>Cerinta proiectului:</h4>
+            <p>Sa se dezvolte o aplicatie Web care sa reprezinte un manager de contacte personale. Utilizatorii vor avea acces la functionalitati pe baza unui cont. Fiecare persoana de contact va avea asociate informatii precum nume, prenume, adresa, data nasterii, minim o fotografie, numere de telefon, adrese de e-mail, adrese Web, descriere, interese etc.
+
+            Aplicatia va permite gruparea contactelor, cautarea pe baza unor criterii complexe (de pilda, obtinerea persoanelor mai tinere de 20 de ani localizate in Iasi, actualmente la FII si care sunt interesate de tehnologii Web), precum si exportarea acestor informatii in diferite formate (cel putin vCard, CSV, Atom).</p>
+            <h4>Ideea de baza:</h4>
+            <p> Site-ul Online Contacts pune la dispozitia dumneavoastra o platforma gratuita pentru stocarea contactelor in format online. Toti oamenii au o multime de persoane cunoscute, iar site-ul Online Contacts vine in ajutorul persoanelor care au nevoie de un mod mai usor in care sa isi stocheze si gestioneze toate datele pe care le au despre toate persoanele apropiate si nu numai. Asadar, scopul acestui site este de a oferi tuturor oamenilor posibilitatea de a avea o agenda online complet gratuita.</p>
+            <p> Cu ajutorul site-ului nostru aveti posibilitatea sa va salvati si sa va pastrati toate datele legate de orice persoana cunoscuta. Utilizand site-ul nostru pentru a va stoca datele, veti beneficia de siguranta si securitate pentru a va pastra contactele.</p>
+        </aside>
+    </section>
+
+    <section typeof="sa:MaterialsAndMethods">
+        <h2>2. Tehnologii si limbaje utilizate</h2>
+        <aside typeof="schema:WPSideBar">
+            <p>In alcatuirea aplicatiei noastre am folosit urmatoarele tehnologii si limbaje de programare:</p>
+            <ol>
+                <li>
+                    HTML5 / CSS3 / JavaScript - Pentru partea de FrontEnd
+                </li>
+                <li>
+                    PHP7 - Pentru partea de BackEnd
+                </li>
+                <li>
+                    JavaScript - Pentru apelurile AJAX
+                </li>
+                <li>
+                    MySQL - Database
+                </li>
+                <li>
+                    GitHub - repository
+                </li>
+            </ol>
+        </aside>
+    </section>
+
+    <section typeof="sa:MaterialsAndMethods">
+        <h2>3. Diagrame</h2>
+        </figure>
+                <figure typeof="sa:Image">
+            <figcaption>Diagrama Master:</figcaption>
+            <img class="imag" src="MasterDiagram.png">
+        </figure>
+        <figure typeof="sa:Image">
+            <figcaption>Arhitectura bazei de date:</figcaption>
+            <img class="imag" src="data_base.png">
+        </figure>
+        <figure typeof="sa:Image">
+            <figcaption>Diagrama use case:</figcaption>
+            <img class="imag" src="UMLdiagram.png">
+    </section>
+
+    <section typeof="sa:MaterialsAndMethods">
+
+        <h2>4. Atributii</h2>
+        <figure typeof="sa:Table">
+            <table>
+                <thead>
+                <tr>
+                    <th>Nume</th>
+                    <th>Task</th>
+                </tr>
+                </thead>
+                <tr>
+                    <th>Lungu Radu-Ionut</th>
+                    <th>BD + Front end + Back end (login/logout, register, adauga contact, exporturi, validari)</th>
+                </tr>
+                <tr>
+                    <th>Daniela Simiganoschi</th>
+                    <th>BD + Front end + Back end (sterge contact, editeaza contact, filtreaza contacte, apel ajax)</th>
+                </tr>
+            </table>
+        </figure>
+    </section>
+
+    <section typeof="sa:MaterialsAndMethods">
+
+        <h2>5. Retrospectiva</h2>
+        <figure typeof="sa:Table">
+            <table>
+                <thead>
+                <tr>
+                    <th>Nume</th>
+                    <th>Stare</th>
+                    <th>Likes</th>
+                    <th>Dislikes</th>
+                </tr>
+                </thead>
+                <tr>
+                    <th>Lungu Radu-Ionut</th>
+                    <th>&#9733 &#9733 &#9733 &#9733 &#9734</th>
+                    <th>lucrul in echipa; lucruri noi, interesante;</th>
+                    <th>mai multa coordonare intre membrii echipei;</th>
+                </tr>
+                <tr>
+                    <th>Simiganoschi Daniela</th>
+                    <th>&#9733 &#9733 &#9733 &#9733 &#9734</th>
+                    <th>limbaje noi de programare; colaborare;</th>
+                    <th>nopti nedormite; organizarea proasta a timpului;</th>
+                </tr>
+            </table>
+        </figure>
+    </section>
+
+    <section typeof="sa:ReferenceList">
+        <h2>6. Bibliografie</h2>
+        <ol>
+            <li typeof="schema:ScholarlyArticle" resource="https://gist.github.com/jakebellacera/635416">
+            <span property="schema:author" typeof="schema:Person">
+                <span property="schema:familyName">Bellacera</span>
+                <span property="schema:givenName">Jake</span>
+            </span>.
+                <cite property="schema:name">PHP to ICS.</cite>
+                <span property="schema:isPartOf" typeof="schema:PublicationVolume">
+                    <span property="schema:isPartOf" typeof="schema:Periodical">
+                        <span property="schema:name">GitHub.</span>
+                    </span>
+                </span>
+            </li>
+            <li typeof="schema:ScholarlyArticle" resource="https://stackoverflow.com/questions/44499177/json-ajax-problems?noredirect=1#comment75992269_44499177">
+            <span property="schema:author" typeof="schema:Person">
+                <span property="schema:familyName">Saini</span>
+                <span property="schema:givenName">R</span>.
+                <span property="schema:givenName">K</span>. ,
+                <span property="schema:familyName">shubham</span>
+                <span property="schema:givenName">715</span>. ,
+                <span property="schema:familyName">White</span>
+                <span property="schema:givenName">Hat</span>
+            </span>.
+                <cite property="schema:name">Intrebari in legatura cu JSON si $ajax.</cite>
+                <span property="schema:isPartOf" typeof="schema:PublicationVolume">
+                    <span property="schema:isPartOf" typeof="schema:Periodical">
+                        <span property="schema:name">StackOverflow.</span>
+                    </span>
+                </span>
+            </li>
+            <li typeof="schema:ScholarlyArticle" resource="https://pixabay.com/">
+                <cite property="schema:name">Imagini cu drept de reutilizare.</cite>
+                <span property="schema:isPartOf" typeof="schema:PublicationVolume">
+                    <span property="schema:isPartOf" typeof="schema:Periodical">
+                        <span property="schema:name">PixAbay.</span>
+                    </span>
+                </span>
+            </li>
+            <li typeof="schema:ScholarlyArticle" resource="https://www.google.ro/search?q=google+images&hl=ro&site=webhp&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjG5P2_gLnUAhVEVhQKHYLaCsAQ_AUIBigB&biw=1920&bih=947#q=google+images&hl=ro&tbm=isch&tbs=sur:fc">
+                <cite property="schema:name">Imagini cu drept de reutilizare.</cite>
+                <span property="schema:isPartOf" typeof="schema:PublicationVolume">
+                    <span property="schema:isPartOf" typeof="schema:Periodical">
+                        <span property="schema:name">Google images.</span>
+                    </span>
+                </span>
+            </li>
+        </ol>
+    </section>
+</article>
+</body>
